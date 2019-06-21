@@ -16,20 +16,22 @@ In continuous case, I discretize the action space to use wolpertinger-DDPG train
 ## Usage
 * In Pendulum-v0 (continuous control), discretize the continuous action space to a discrete action spaces with 200000 actions.
     ```
-    python main.py --env 'Pendulum-v0' --max-actions 200000
+    $ python main.py --env 'Pendulum-v0' --max-actions 200000
     ```
 * To use CPU only:
     ```
-    python main.py --gpu-ids -1
+    $ python main.py --gpu-ids -1
     ```
 * To use single-GPU only:
     ```
-    python main.py --gpu-ids 0 --gpu-nums 1
+    $ python main.py --gpu-ids 0 --gpu-nums 1
     ```
 * To use multi-GPU (e.g., use GPU-0 and GPU-1):
     ```
-    python main.py --gpu-ids 0 1 --gpu-nums 2
+    $ python main.py --gpu-ids 0 1 --gpu-nums 2
     ```
+## Result
+* Please refer to [`output`](./output) for the trained policy and training log.
 
 ## Project Reference
 * [Original paper of Wolpertinger Training with DDPG, Google DeepMind](https://arxiv.org/abs/1512.07679)
