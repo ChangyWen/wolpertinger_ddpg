@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="test_wolp_ddpg" createEmptyFolders="true">
+    <serverData>
+      <paths name="test_wolp_ddpg">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/wolpertinger_ddpg" local="$PROJECT_DIR$" web="/wolpertinger_ddpg" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
