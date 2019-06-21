@@ -15,7 +15,7 @@ In continuous case, I discretize the action space to use wolpertinger-DDPG train
 
 ## Usage
 * In Pendulum-v0 (continuous control), discretize the continuous action space to a discrete action spaces with 200000 actions.
-    ```python
+    ```
     python main.py --env 'Pendulum-v0' --max-actions 200000
     ```
 * To use CPU only:
