@@ -37,4 +37,4 @@ In continuous case, I discretize the action space to use wolpertinger-DDPG train
 * https://github.com/jimkon/Deep-Reinforcement-Learning-in-Large-Discrete-Action-Spaces
 
 ## TODO
-* Upload the training result
+* Update the training result
