@@ -19,15 +19,15 @@ In continuous case, I discretize the action space to use wolpertinger-DDPG train
     python main.py --env 'Pendulum-v0' --max-actions 200000
     ```
 * To use CPU only:
-    ```python
+    ```
     python main.py --gpu-ids -1 # -1 for CPU only
     ```
 * To use single-GPU only:
-    ```python
+    ```
     python main.py --gpu-ids 0 --gpu-nums 1 # your gpu id and #gpu used
     ```
 * To use multi-GPU:
-    ```python
+    ```
     python main.py --gpu-ids 0 1 --gpu-nums 2 # your gpu id and #gpu used
     ```
 
