@@ -20,15 +20,15 @@ In continuous case, I discretize the action space to use wolpertinger-DDPG train
     ```
 * To use CPU only:
     ```
-    python main.py --gpu-ids -1 # -1 for CPU only
+    python main.py --gpu-ids -1
     ```
 * To use single-GPU only:
     ```
-    python main.py --gpu-ids 0 --gpu-nums 1 # your gpu id and #gpu used
+    python main.py --gpu-ids 0 --gpu-nums 1
     ```
 * To use multi-GPU:
     ```
-    python main.py --gpu-ids 0 1 --gpu-nums 2 # your gpu id and #gpu used
+    python main.py --gpu-ids 0 1 --gpu-nums 2
     ```
 
 ## Project Reference
