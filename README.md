@@ -6,8 +6,8 @@ The code is compatible with training in multi-GPU, single-GPU or CPU. <br>
 ## Dependencies
 * python 3.6.8
 * torch 1.1.0
-* [https://github.com/openai/gym](OpenAI gym)
-* [pyflann][http://www.galaxysofts.com/new/pyflann-for-python-3x/]
+* [OpenAI gym](https://github.com/openai/gym)
+* [pyflann](http://www.galaxysofts.com/new/pyflann-for-python-3x/)
 
 ## Project Reference
 * [Original paper of Wolpertinger Training with DDPG, Google DeepMind][https://arxiv.org/abs/1512.07679]
