@@ -24,22 +24,47 @@ if __name__ == "__main__":
 
     args.save_model_dir = get_output_folder('output', args.env)
 
-    env = NormalizedEnv(gym.make(args.env))
-    nb_states = env.observation_space.shape[0]
-    nb_actions = 1 # = env.action_space.shape[0] in 'Pendulum-v0'
-    action_high = env.action_space.high
-    action_low = env.action_space.low
+    env = gym.make(args.env)
+    continuous = None
+    try:
+        # continuous action
+        nb_states = env.observation_space.shape[0]
+        nb_actions = env.action_space.shape[0]
+        action_high = env.action_space.high
+        action_low = env.action_space.low
+        continuous = True
+        env = NormalizedEnv(env)
+    except IndexError:
+        # discrete action for 1 dimension
+        nb_states = env.observation_space.shape[0]
+        nb_actions = 1
+        max_actions = env.action_space.n
+        continuous = False
+
     if args.seed > 0:
         np.random.seed(args.seed)
         env.seed(args.seed)
 
-    agent_args = {
-        'action_low': action_low,
-        'action_high': action_high,
-        'nb_states': nb_states,
-        'nb_actions': nb_actions,
-        'args': args,
-    }
+    if continuous:
+        agent_args = {
+            'continuous':continuous,
+            'max_actions':None,
+            'action_low': action_low,
+            'action_high': action_high,
+            'nb_states': nb_states,
+            'nb_actions': nb_actions,
+            'args': args,
+        }
+    else:
+        agent_args = {
+            'continuous':continuous,
+            'max_actions':max_actions,
+            'action_low': None,
+            'action_high': None,
+            'nb_states': nb_states,
+            'nb_actions': nb_actions,
+            'args': args,
+        }
 
     agent = WolpertingerAgent(**agent_args)
 
@@ -65,6 +90,7 @@ if __name__ == "__main__":
     if args.mode == 'train':
 
         train_args = {
+            'continuous':continuous,
             'env': env,
             'agent': agent,
             'max_episode': args.max_episode,
