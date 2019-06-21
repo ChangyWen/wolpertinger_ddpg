@@ -16,6 +16,7 @@ def init_parser(alg):
         parser.add_argument('--gpu-ids', type=int, default=[1], nargs='+', help='GPUs to use [-1 CPU only]')
         parser.add_argument('--gpu-nums', type=int, default=1, help='#GPUs to use (default: 1)')
         parser.add_argument('--max-episode', type=int, default=200000, help='maximum #episode.')
+        parser.add_argument('--test-episode', type=int, default=1000, help='maximum testing #episode.')
         parser.add_argument('--max-actions', default=200000, type=int, help='# max actions')
         parser.add_argument('--id', default='0', type=str, help='experiment id')
         parser.add_argument('--mode', default='train', type=str, help='support option: train/test')

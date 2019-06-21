@@ -4,7 +4,7 @@
 import os
 import numpy as np
 import logging
-from train_test import train # , test
+from train_test import train, test
 import warnings
 from arg_parser import init_parser
 from setproctitle import setproctitle as ptitle
@@ -102,17 +102,18 @@ if __name__ == "__main__":
 
         train(**train_args)
 
-    # elif args.mode == 'test':
-    #
-    #     test_args = {
-    #         'agent': agent,
-    #         'test_month': args.test_month,
-    #         'model_path': args.load_model_dir,
-    #         'seed': args.seed,
-    #         'logger': log['RS_log'],
-    #     }
-    #
-    #     test(**test_args)
+    elif args.mode == 'test':
+
+        test_args = {
+            'env':env,
+            'agent': agent,
+            'model_path': args.load_model_dir,
+            'test_episode':args.test_episode,
+            'max_episode_length': args.max_episode_length,
+            'logger': log['RS_log'],
+        }
+
+        test(**test_args)
 
     else:
         raise RuntimeError('undefined mode {}'.format(args.mode))

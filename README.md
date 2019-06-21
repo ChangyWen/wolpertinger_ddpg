@@ -26,7 +26,7 @@ In continuous case, I discretize the action space to use wolpertinger-DDPG train
     ```
     python main.py --gpu-ids 0 --gpu-nums 1
     ```
-* To use multi-GPU:
+* To use multi-GPU (e.g., use GPU-0 and GPU-1):
     ```
     python main.py --gpu-ids 0 1 --gpu-nums 2
     ```
@@ -37,5 +37,4 @@ In continuous case, I discretize the action space to use wolpertinger-DDPG train
 * https://github.com/jimkon/Deep-Reinforcement-Learning-in-Large-Discrete-Action-Spaces
 
 ## TODO
-* Module of testing the trained policy
 * Upload the training result
