@@ -7,7 +7,7 @@ The code is compatible with training in multi-GPU, single-GPU or CPU. <br>
 * python 3.6.8
 * torch 1.1.0
 * [OpenAI gym](https://github.com/openai/gym)
-  * If you get an RunTimeError:NotImplementedError in ActionWrapper.step while training with gym, replace your gym/core.py file with `(/gym_core/core.py)`.
+  * If you get an RunTimeError:NotImplementedError in ActionWrapper.step while training with gym, replace your gym/core.py file with `(./gym_core/core.py)`.
 * [pyflann](http://www.galaxysofts.com/new/pyflann-for-python-3x/)
   * This is the library (FLANN, [Muja & Lowe, 2014](https://ieeexplore.ieee.org/abstract/document/6809191)) with approximate nearest-neighbor methods allowed for logarithmic-time lookup complexity relative to the number of actions. However, the python binding of FLANN (pyflann) is written for python 2 and is no longer maintained. Please refer to [pyflann](http://www.galaxysofts.com/new/pyflann-for-python-3x/) for the pyflann package compatible with python3. Just download and place it in your (virtual) environment.
 
