@@ -37,6 +37,3 @@ In continuous case, I discretize the action space to use wolpertinger-DDPG train
 * [Original paper of Wolpertinger Training with DDPG, Google DeepMind](https://arxiv.org/abs/1512.07679)
 * https://github.com/ghliu/pytorch-ddpg
 * https://github.com/jimkon/Deep-Reinforcement-Learning-in-Large-Discrete-Action-Spaces
-
-## TODO
-* Update the training result
