@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# [reference] Use and modified code in https://github.com/ghliu/pytorch-ddpg
+
 import torch.nn as nn
 from torch.optim import Adam
 

@@ -1,3 +1,6 @@
+
+# From https://github.com/openai/gym/blob/master/gym/core.py
+
 from gym import logger
 
 import gym
