@@ -32,7 +32,10 @@ class Space:
         self._index = self._flann.build_index(self.__space, algorithm='kdtree')
 
     def search_point(self, point, k):
-        p_in = self.import_point(point)
+        p_in = point
+        if not isinstance(point, np.ndarray):
+            p_in = np.array([p_in]).astype(np.float64)
+        # p_in = self.import_point(point)
         search_res, _ = self._flann.nn_index(p_in, k)
         knns = self.__space[search_res]
         p_out = []
