@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="10.26.2.6" id="daac309f-e4ae-42f4-81cf-c6ccb7db4f5a" port="22" customName="test_wolp_ddpg" nameFormat="CUSTOM" username="user">
+        <option name="customName" value="test_wolp_ddpg" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
