@@ -1,0 +1,6 @@
+# Project exclude paths
+__pycache_
+*.py[cod]
+.DS_Store
+/.idea/
+src/auxiliary_self_test.py

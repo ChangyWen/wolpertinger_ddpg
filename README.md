@@ -31,7 +31,7 @@ In continuous case, I discretize the action space to use wolpertinger-DDPG train
     python main.py --gpu-ids 0 1 --gpu-nums 2
     ```
 ## Result
-* Please refer to [`output`](./output) for the trained policy and training log.
+* Please refer to [`output`](output) for the trained policy and training log.
 
 ## Project Reference
 * [Original paper of Wolpertinger Training with DDPG, Google DeepMind](https://arxiv.org/abs/1512.07679)
