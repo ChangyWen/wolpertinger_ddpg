@@ -2,7 +2,7 @@
 ## Overview
 Pytorch version of Wolpertinger Training with DDPG (paper: [Deep Reinforcement Learning in Large Discrete Action Spaces](https://arxiv.org/pdf/1512.07679.pdf)). <br>
 The code is compatible with training in multi-GPU, single-GPU or CPU. <br>
-It is also compatible with both continuous and discrete control of OpenAI gym. <br>
+It is also compatible with both **continuous** and **discrete** control of OpenAI gym. <br>
 In continuous case, I discretize the action space to use wolpertinger-DDPG training algorithm.
 
 ## Dependencies
