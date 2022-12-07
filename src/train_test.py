@@ -90,4 +90,6 @@ def test(env, agent, model_path, test_episode, max_episode_length, logger):
                     "Ep:{0} | R:{1:.4f}".format(i+1, episode_reward)
                 )
                 s_t = None
+                episode_steps = 0
+                episode_reward = 0.
                 break
